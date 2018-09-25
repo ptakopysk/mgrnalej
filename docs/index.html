@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Programming Check-up</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
 <h1>Programming Check-up</h1>
 
 <p><a href="http://c.nikde.eu">http://c.nikde.eu</a></p>
@@ -54,22 +62,24 @@ int main() {
 </li>
 <li><p><strong>max</strong>: Read in the input, write out the highest number.</p>
 
-<p>Reading input and printing out numbers:</p>
+<ul>
+<li><p>Reading standard input (one integer per line) and printing out numbers:</p>
 
-<pre><code>// read in stadard input, one integer per line
-int number;
+<pre><code>int number;
 while (scanf("%d\n", &amp;number) == 1) {
     printf("%d\n", number);
 }
-</code></pre>
-
-<p>Run the program as:</p>
+</code></pre></li>
+<li><p>Sending a file to the standard input of the compiled program:</p>
 
 <pre><code>./max.bin &lt; input.txt
 </code></pre></li>
+</ul>
+</li>
 <li><p><strong>bubble</strong>: Sort the list using BUBBLE SORT in an ARRAY</p>
 
-<p>Reading in arguments and filling an array:</p>
+<ul>
+<li><p>Reading in arguments and filling an array:</p>
 
 <pre><code>#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
@@ -87,25 +97,26 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 </code></pre></li>
+</ul>
+</li>
 <li><p><strong>matrix</strong>: Read in a 10x10 matrix (from the first 100 numbers of the input) using a 1-dimensional ARRAY, write it out, transpose it, and write it out again.</p></li>
 <li><p><strong>insert</strong>: Sort the list using INSERTION SORT, using a LINKED LIST</p>
 
-<p> A node struct with a pointer to a next node:</p>
+<ul>
+<li><p>A Node struct with a pointer to the next Node:</p>
 
 <pre><code>struct Node {
     int number;
     struct Node * next;
 };
-</code></pre>
-
-<p> Create a new Node and keep a pointer to it:</p>
+</code></pre></li>
+<li><p>Create a new Node and keep a pointer to it:</p>
 
 <pre><code>struct Node * my_node = malloc(sizeof(struct Node));
 my_node-&gt;number = 42;
 my_node-&gt;next = NULL;
-</code></pre>
-
-<p> Iterate over a chain of Nodes and iteratively delete them to free the allocated memory:</p>
+</code></pre></li>
+<li><p>Iterate over a chain of Nodes and iteratively delete them to free the allocated memory:</p>
 
 <pre><code>while (my_node != NULL) {
     struct Node * tmp = my_node;
@@ -114,7 +125,12 @@ my_node-&gt;next = NULL;
     free(tmp);
 }
 </code></pre></li>
+</ul>
+</li>
 <li><p><strong>bst</strong>: Construct a basic BINARY SEARCH TREE from the list, using POINTERS</p></li>
 <li><strong>hash</strong>: Store the numbers in a HASH TABLE implemented with a simple hashing function and separate chaining with linked lists</li>
 </ol>
+
+</body>
+</html>
 
