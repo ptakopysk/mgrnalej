@@ -23,7 +23,7 @@
     
            ./hello.bin
 
-1. **max**: Read in the input, write out the largest number. 
+1. **max**: Read in the input, write out the highest number. 
    
    Reading input and printing out numbers:    
    

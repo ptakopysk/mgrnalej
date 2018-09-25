@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int max = 0;
+    int max = -1;
     int number;
     while (cin >> number) {
         if (number > max) {
