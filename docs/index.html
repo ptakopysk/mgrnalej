@@ -1,14 +1,29 @@
 <h1>Programming Check-up</h1>
 
+<p>http://c.nikde.eu</p>
+
+<p>It is recommended to use the lab computer (use the <code>vyuka</code> user and <code>vyuka</code> password if you do not have an account yet). You can also use your own laptop, but if it is not Linux/Unix, some things will have to be done differently.</p>
+
+<h2>Preparation</h2>
+
 <ol>
+<li><p>Open up a terminal (the default Linux shortcut for that is <code>Crtl+Alt+T</code>; or click through the menus to find something called Terminal or similar)</p></li>
 <li><p>Generate input data (one random number per line, between 0 and 32767 inclusive)</p>
 
 <pre><code>for i in $(seq 10000); do echo $RANDOM; done &gt; input.txt
-</code></pre></li>
+</code></pre>
+
+<p>If you are using a system which does not support that, you can alternatively <a href="http://ufallab.ms.mff.cuni.cz/~rosa/c/input.txt">download an input file here</a></p></li>
+</ol>
+
+
+<h2>Exercises</h2>
+
+<ol>
 <li><p><strong>hello</strong>: Hello world in C</p>
 
 <ol>
-<li><p>Open editor</p>
+<li><p>Open an editor</p>
 
 <pre><code>nano hello.c
 </code></pre></li>
