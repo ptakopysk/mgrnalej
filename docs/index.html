@@ -130,7 +130,10 @@ my_node-&gt;next = NULL;
 <li><p><strong>bst</strong>: Construct a basic BINARY SEARCH TREE from the list, using POINTERS.
 Then print out the numbers from lowest to highest by doing an in-order depth first
 search (DFS) traversal over the tree.</p></li>
-<li><strong>hash</strong>: Store the numbers in a HASH TABLE implemented with a simple hashing function and separate chaining with linked lists</li>
+<li><strong>hash</strong>: Store the numbers in a HASH TABLE implemented with a simple hashing function
+ (<code>key = number % N</code>, where N is the size of the table) and separate chaining with linked lists
+ (the table is an array, each item is a linked list of numbers with the
+ same hash key). Write out the hash table.</li>
 </ol>
 
 </body>
