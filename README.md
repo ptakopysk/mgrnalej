@@ -32,8 +32,8 @@
    Run the program as:
    
        ./max.bin < input.txt
-1. **bubble**: Sort the list in an ARRAY using something simple (bubble sort?)
-1. **matrix**: Read in a 10x10 matrix (fromer from the first 100 numbers of the input), write it out, transpose it, and write it out.
-1. **insert**: Sort the list in a LINKED LIST using something simple (insertion sort?)
-1. **bst**: Construct a basic BINARY SEARCH TREE from the list (using pointers or an array, I don't know).
+1. **bubble**: Sort the list using BUBBLE SORT in an ARRAY
+1. **matrix**: Read in a 10x10 matrix (fromer from the first 100 numbers of the input) using a 1-dimensional ARRAY, write it out, transpose it, and write it out.
+1. **insert**: Sort the list using INSERTION SORT, using a LINKED LIST
+1. **bst**: Construct a basic BINARY SEARCH TREE from the list, using POINTERS
 1. **hash**: Store the numbers in a HASH TABLE implemented with a simple hashing function and separate chaining with linked lists
