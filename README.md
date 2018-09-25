@@ -18,7 +18,7 @@
            }
     1. Compile
      
-           gcc hello.c -o hello.bin
+           gcc -Wall hello.c -o hello.bin
     1. Run
     
            ./hello.bin
@@ -58,6 +58,31 @@
 
 1. **matrix**: Read in a 10x10 matrix (from the first 100 numbers of the input) using a 1-dimensional ARRAY, write it out, transpose it, and write it out again.
 1. **insert**: Sort the list using INSERTION SORT, using a LINKED LIST
+
+  A node struct with a pointer to a next node:
+  
+       struct Node {
+           int number;
+           struct Node * next;
+       };
+
+  Create a new Node and keep a pointer to it:
+
+        struct Node * my_node = malloc(sizeof(struct Node));
+        my_node->number = 42;
+        my_node->next = NULL;
+
+   Iterate over a chain of Nodes and iteratively delete them to free the allocated memory:
+   
+           while (my_node != NULL) {
+               struct Node * tmp = my_node;
+               my_node = my_node->next;
+               // deallocate
+               free(tmp);
+           }
+   
+
+
 1. **bst**: Construct a basic BINARY SEARCH TREE from the list, using POINTERS
 1. **hash**: Store the numbers in a HASH TABLE implemented with a simple hashing function and separate chaining with linked lists
 
