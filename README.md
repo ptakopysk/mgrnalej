@@ -24,6 +24,7 @@
            ./hello.bin
 
 1. **max**: Read in the input, write out the largest number. 
+   
    Reading input and printing out numbers:    
    
        // read in stadard input, one integer per line
