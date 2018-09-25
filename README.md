@@ -4,22 +4,21 @@
 
        for i in $(seq 10000); do echo $RANDOM; done > input.txt
     
-1. **hello**: Hello world in C++ // p5epsat do C
+1. **hello**: Hello world in C
     1. Open editor
     
-           nano hello.cpp
+           nano hello.c
     1. Input code
 
-           #include <iostream>
-           using namespace std;
+           #include <stdio.h>
            
            int main() {
-               cout << "Hello, World!" << endl;
+               printf("Hello, World!\n");
                return 0;
            }
     1. Compile
      
-           g++ hello.cpp -o hello.bin
+           gcc hello.c -o hello.bin
     1. Run
     
            ./hello.bin
