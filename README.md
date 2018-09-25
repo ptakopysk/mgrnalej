@@ -56,7 +56,7 @@
            return 0;
        }
 
-1. **matrix**: Read in a 10x10 matrix (fromer from the first 100 numbers of the input) using a 1-dimensional ARRAY, write it out, transpose it, and write it out.
+1. **matrix**: Read in a 10x10 matrix (from the first 100 numbers of the input) using a 1-dimensional ARRAY, write it out, transpose it, and write it out again.
 1. **insert**: Sort the list using INSERTION SORT, using a LINKED LIST
 1. **bst**: Construct a basic BINARY SEARCH TREE from the list, using POINTERS
 1. **hash**: Store the numbers in a HASH TABLE implemented with a simple hashing function and separate chaining with linked lists
