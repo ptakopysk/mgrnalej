@@ -23,10 +23,14 @@
     
            ./hello.bin
 
-1. **max**: Read in the input, write out the largest number
-   Read in input like that:    
+1. **max**: Read in the input, write out the largest number. 
+   Reading input and printing out numbers:    
    
-       nějakej C kd
+       // read in stadard input, one integer per line
+       int number;
+       while (scanf("%d\n", &number) == 1) {
+           printf("%d\n", number);
+       }
        
    Run the program as:
    
