@@ -102,7 +102,7 @@ It is recommended to use the lab computer (use the `vyuka` user and `vyuka` pass
    Then print out the numbers from lowest to highest by doing an in-order depth first
    search (DFS) traversal over the tree.
 1. **hash**: Store the numbers in a HASH TABLE implemented with a simple hashing function
-    (``key = number % N``, where N is the size of the table) and separate chaining with linked lists
-    (the table is an array, each item is a linked list of numbers with the
-    same hash key). Write out the hash table.
+    and separate chaining with linked lists. Write out the hash table.
+    * simple hashing function: ``key = number % N``, where N is the size of the table
+    * separate chaining with linked lists: the table is an array, each item is a linked list of numbers with the same hash key
 
