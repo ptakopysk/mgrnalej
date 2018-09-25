@@ -4,7 +4,7 @@
 
        for i in $(seq 10000); do echo $RANDOM; done > input.txt
     
-1. **hello**: Hello world in C++
+1. **hello**: Hello world in C++ // p5epsat do C
     1. Open editor
     
            nano hello.cpp
@@ -25,6 +25,13 @@
            ./hello.bin
 
 1. **max**: Read in the input, write out the largest number
+   Read in input like that:    
+   
+       nějakej C kd
+       
+   Run the program as:
+   
+       ./max.bin < input.txt
 1. **kbest**: Write out the K largest ones
     * For small K, it is OK to use a solution in O(NK) with an array
     * For a potentially large K, this should be done with a HEAP
