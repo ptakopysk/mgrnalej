@@ -84,7 +84,3 @@
 1. **bst**: Construct a basic BINARY SEARCH TREE from the list, using POINTERS
 1. **hash**: Store the numbers in a HASH TABLE implemented with a simple hashing function and separate chaining with linked lists
 
-# Recommended courses
-* prográmko I
-* C++
-* [NSWI015 Unix/Linux Programming in C](https://is.cuni.cz/studium/eng/predmety/index.php?do=predmet&kod=NSWI015)
