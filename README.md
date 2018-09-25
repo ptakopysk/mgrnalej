@@ -1,11 +1,22 @@
 # Programming Check-up
 
-0. Generate input data (one random number per line, between 0 and 32767 inclusive)
+http://c.nikde.eu
+
+It is recommended to use the lab computer (use the `vyuka` user and `vyuka` password if you do not have an account yet). You can also use your own laptop, but if it is not Linux/Unix, some things will have to be done differently.
+
+## Preparation
+
+1. Open up a terminal (the default Linux shortcut for that is `Crtl+Alt+T`; or click through the menus to find something called Terminal or similar)
+
+1. Generate input data (one random number per line, between 0 and 32767 inclusive)
 
        for i in $(seq 10000); do echo $RANDOM; done > input.txt
+   If you are using a system which does not support that, you can alternatively [download an input file here](http://ufallab.ms.mff.cuni.cz/~rosa/c/input.txt)
+
+## Exercises
     
 1. **hello**: Hello world in C
-    1. Open editor
+    1. Open an editor
     
            nano hello.c
     1. Input code
