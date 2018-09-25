@@ -1,4 +1,4 @@
-# mgrnalej
+# Programming Check-up
 
 0. Generate input data
 
