@@ -1,0 +1,108 @@
+<h1>Programming Check-up</h1>
+
+<ol>
+<li><p>Generate input data (one random number per line, between 0 and 32767 inclusive)</p>
+
+<pre><code>for i in $(seq 10000); do echo $RANDOM; done &gt; input.txt
+</code></pre></li>
+<li><p><strong>hello</strong>: Hello world in C</p>
+
+<ol>
+<li><p>Open editor</p>
+
+<pre><code>nano hello.c
+</code></pre></li>
+<li><p>Input code</p>
+
+<pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+</code></pre></li>
+<li><p>Compile</p>
+
+<pre><code>gcc -Wall hello.c -o hello.bin
+</code></pre></li>
+<li><p>Run</p>
+
+<pre><code>./hello.bin
+</code></pre></li>
+</ol>
+</li>
+<li><p><strong>max</strong>: Read in the input, write out the highest number.</p>
+
+<p>Reading input and printing out numbers:</p>
+
+<pre><code>// read in stadard input, one integer per line
+int number;
+while (scanf("%d\n", &amp;number) == 1) {
+    printf("%d\n", number);
+}
+</code></pre>
+
+<p>Run the program as:</p>
+
+<pre><code>./max.bin &lt; input.txt
+</code></pre></li>
+<li><p><strong>bubble</strong>: Sort the list using BUBBLE SORT in an ARRAY</p>
+
+<p>Reading in arguments and filling an array:</p>
+
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main(int argc, char* argv[]) {
+    int N = atoi(argv[1]);
+    int numbers[N];
+
+    for (int i = 0; i &lt; N; i++) {
+        scanf("%d\n", &amp;numbers[i]);
+        printf("%d ", numbers[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+</code></pre></li>
+<li><p><strong>matrix</strong>: Read in a 10x10 matrix (from the first 100 numbers of the input) using a 1-dimensional ARRAY, write it out, transpose it, and write it out again.</p></li>
+<li><p><strong>insert</strong>: Sort the list using INSERTION SORT, using a LINKED LIST</p>
+
+<p> A node struct with a pointer to a next node:</p>
+
+<pre><code>struct Node {
+    int number;
+    struct Node * next;
+};
+</code></pre>
+
+<p> Create a new Node and keep a pointer to it:</p>
+
+<pre><code>struct Node * my_node = malloc(sizeof(struct Node));
+my_node-&gt;number = 42;
+my_node-&gt;next = NULL;
+</code></pre>
+
+<p> Iterate over a chain of Nodes and iteratively delete them to free the allocated memory:</p>
+
+<pre><code>while (my_node != NULL) {
+    struct Node * tmp = my_node;
+    my_node = my_node-&gt;next;
+    // deallocate
+    free(tmp);
+}
+</code></pre></li>
+<li><p><strong>bst</strong>: Construct a basic BINARY SEARCH TREE from the list, using POINTERS</p></li>
+<li><strong>hash</strong>: Store the numbers in a HASH TABLE implemented with a simple hashing function and separate chaining with linked lists</li>
+</ol>
+
+
+<h1>Recommended courses</h1>
+
+<ul>
+<li>prográmko I</li>
+<li>C++</li>
+<li><a href="https://is.cuni.cz/studium/eng/predmety/index.php?do=predmet&amp;kod=NSWI015">NSWI015 Unix/Linux Programming in C</a></li>
+</ul>
+
