@@ -4,31 +4,40 @@
 
        for i in $(seq 10000); do echo $RANDOM; done > input.txt
     
-1. **hello**: Hello world in C++
+1. **hello**: Hello world in C
     1. Open editor
     
-           nano hello.cpp
+           nano hello.c
     1. Input code
 
-           #include <iostream>
-           using namespace std;
+           #include <stdio.h>
            
            int main() {
-               cout << "Hello, World!" << endl;
+               printf("Hello, World!\n");
                return 0;
            }
     1. Compile
      
-           g++ hello.cpp -o hello.bin
+           gcc hello.c -o hello.bin
     1. Run
     
            ./hello.bin
 
-1. **max**: Read in the input, write out the largest number
-1. **kbest**: Write out the K largest ones
-    * For small K, it is OK to use a solution in O(NK) with an array
-    * For a potentially large K, this should be done with a HEAP
-1. **bubble**: Sort the list in an ARRAY using something simple (bubble sort?)
-1. **insert**: Sort the list in a LINKED LIST using something simple (insertion sort?)
-1. **bst**: Construct a basic BINARY SEARCH TREE from the list (using pointers or an array, I don't know).
+1. **max**: Read in the input, write out the largest number. 
+   
+   Reading input and printing out numbers:    
+   
+       // read in stadard input, one integer per line
+       int number;
+       while (scanf("%d\n", &number) == 1) {
+           printf("%d\n", number);
+       }
+       
+   Run the program as:
+   
+       ./max.bin < input.txt
+1. **bubble**: Sort the list using BUBBLE SORT in an ARRAY
+1. **matrix**: Read in a 10x10 matrix (fromer from the first 100 numbers of the input) using a 1-dimensional ARRAY, write it out, transpose it, and write it out.
+1. **insert**: Sort the list using INSERTION SORT, using a LINKED LIST
+1. **bst**: Construct a basic BINARY SEARCH TREE from the list, using POINTERS
 1. **hash**: Store the numbers in a HASH TABLE implemented with a simple hashing function and separate chaining with linked lists
