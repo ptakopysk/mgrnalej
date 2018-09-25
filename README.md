@@ -97,6 +97,8 @@ It is recommended to use the lab computer (use the `vyuka` user and `vyuka` pass
              free(tmp);
          }
 
-1. **bst**: Construct a basic BINARY SEARCH TREE from the list, using POINTERS
+1. **bst**: Construct a basic BINARY SEARCH TREE from the list, using POINTERS.
+   Then print out the numbers from lowest to highest by doing an in-order depth first
+   search (DFS) traversal over the tree.
 1. **hash**: Store the numbers in a HASH TABLE implemented with a simple hashing function and separate chaining with linked lists
 
