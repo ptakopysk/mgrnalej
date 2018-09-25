@@ -17,7 +17,8 @@ It is recommended to use the lab computer (use the `vyuka` user and `vyuka` pass
 1. Generate input data (one random number per line, between 0 and 32767 inclusive)
 
        for i in $(seq 10000); do echo $RANDOM; done > input.txt
-   If you are using a system which does not support that, you can alternatively [download an input file here](http://ufallab.ms.mff.cuni.cz/~rosa/c/input.txt)
+   If you are using a system which does not support that, you can alternatively download an input file here:
+   [http://c.nikde.eu/input.txt](http://c.nikde.eu/input.txt)
 
 ## Exercises
     
