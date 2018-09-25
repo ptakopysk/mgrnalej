@@ -1,6 +1,6 @@
 # Programming Check-up
 
-0. Generate input data
+0. Generate input data (one random number per line, between 0 and 32767 inclusive)
 
        for i in $(seq 10000); do echo $RANDOM; done > input.txt
     
@@ -24,8 +24,10 @@
     
            ./hello.bin
 
-1. **max**: Read in some numbers, write out the largest one
-1. **kbest**: Write out the K largest ones (if K is e.g. 3 can be done explicitly, or for a general K this should be done with a HEAP)
+1. **max**: Read in the input, write out the largest number
+1. **kbest**: Write out the K largest ones
+    * For small K, it is OK to use a solution in O(NK) with an array
+    * For a potentially large K, this should be done with a HEAP
 1. **bubble**: Sort the list in an ARRAY using something simple (bubble sort?)
 1. **insert**: Sort the list in a LINKED LIST using something simple (insertion sort?)
 1. **bst**: Construct a basic BINARY SEARCH TREE from the list (using pointers or an array, I don't know).
