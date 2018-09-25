@@ -54,7 +54,7 @@
            printf("\n");
            
            return 0;
-        }
+       }
 
 1. **matrix**: Read in a 10x10 matrix (fromer from the first 100 numbers of the input) using a 1-dimensional ARRAY, write it out, transpose it, and write it out.
 1. **insert**: Sort the list using INSERTION SORT, using a LINKED LIST
