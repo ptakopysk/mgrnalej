@@ -55,6 +55,11 @@ It is recommended to use the lab computer (use the `vyuka` user and `vyuka` pass
          ./max.bin < input.txt
 1. **bubble**: Sort the list using BUBBLE SORT in an ARRAY
 
+   * Arrays are fixed size in C, so we'll provide the program with the number
+     of numbers to read in as the 1st parameter:
+
+         ./bubble.bin 10000 < input.txt
+
    * Reading in arguments and filling an array:
 
          #include <stdio.h>
