@@ -67,7 +67,7 @@ int main() {
 <li><p>Reading standard input (one integer per line) and printing out numbers:</p>
 
 <pre><code>int number;
-while (scanf("%d\n", &amp;number) == 1) {
+while (scanf("%d", &amp;number) == 1) {
     printf("%d\n", number);
 }
 </code></pre></li>
@@ -90,7 +90,7 @@ int main(int argc, char* argv[]) {
     int numbers[N];
 
     for (int i = 0; i &lt; N; i++) {
-        scanf("%d\n", &amp;numbers[i]);
+        scanf("%d", &amp;numbers[i]);
         printf("%d ", numbers[i]);
     }
     printf("\n");
