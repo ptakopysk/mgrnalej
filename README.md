@@ -46,7 +46,7 @@ It is recommended to use the lab computer (use the `vyuka` user and `vyuka` pass
    * Reading standard input (one integer per line) and printing out numbers:    
    
          int number;
-         while (scanf("%d\n", &number) == 1) {
+         while (scanf("%d", &number) == 1) {
              printf("%d\n", number);
          }
        
@@ -65,7 +65,7 @@ It is recommended to use the lab computer (use the `vyuka` user and `vyuka` pass
              int numbers[N];
 
              for (int i = 0; i < N; i++) {
-                 scanf("%d\n", &numbers[i]);
+                 scanf("%d", &numbers[i]);
                  printf("%d ", numbers[i]);
              }
              printf("\n");
