@@ -12,7 +12,7 @@ It is recommended to use the lab computer (use the `vyuka` user and `vyuka` pass
 
 ## Preparation
 
-1. Open up a terminal (the default Linux shortcut for that is `Crtl+Alt+T`; or click through the menus to find something called Terminal or similar)
+1. Open up a terminal (the default Linux shortcut for that is `Ctrl+Alt+T`; or click through the menus to find something called Terminal or similar)
 
 1. Generate input data (one random number per line, between 0 and 32767 inclusive)
 
