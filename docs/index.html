@@ -21,7 +21,7 @@
 <h2>Preparation</h2>
 
 <ol>
-<li><p>Open up a terminal (the default Linux shortcut for that is <code>Crtl+Alt+T</code>; or click through the menus to find something called Terminal or similar)</p></li>
+<li><p>Open up a terminal (the default Linux shortcut for that is <code>Ctrl+Alt+T</code>; or click through the menus to find something called Terminal or similar)</p></li>
 <li><p>Generate input data (one random number per line, between 0 and 32767 inclusive)</p>
 
 <pre><code>for i in $(seq 10000); do echo $RANDOM; done &gt; input.txt
@@ -80,6 +80,11 @@ while (scanf("%d", &amp;number) == 1) {
 <li><p><strong>bubble</strong>: Sort the list using BUBBLE SORT in an ARRAY</p>
 
 <ul>
+<li><p>Arrays are fixed size in C, so we&rsquo;ll provide the program with the number
+of numbers to read in as the 1st parameter:</p>
+
+<pre><code>./bubble.bin 10000 &lt; input.txt
+</code></pre></li>
 <li><p>Reading in arguments and filling an array:</p>
 
 <pre><code>#include &lt;stdio.h&gt;
