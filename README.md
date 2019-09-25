@@ -4,9 +4,7 @@
 
 Lead by:
 [Rudolf Rosa](https://ufal.mff.cuni.cz/rudolf-rosa),
-[Tomáš Musil](https://ufal.mff.cuni.cz/tomas-musil),
-[Dušan Variš](https://ufal.mff.cuni.cz/dusan-varis),
-[Jonáš Vidra](https://ufal.mff.cuni.cz/jonas-vidra)
+[Tomáš Musil](https://ufal.mff.cuni.cz/tomas-musil)
 
 It is recommended to use the lab computer (use the `vyuka` user and `vyuka` password if you do not have an account yet). You can also use your own laptop, but if it is not Linux/Unix, some things will have to be done differently.
 
